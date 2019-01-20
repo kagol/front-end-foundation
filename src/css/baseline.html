@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Inline boxes - 幽灵空白节点</title>
+    <style>
+        body { margin: 0; }
+        .box { background-color:#e5edff; }
+        .box > img { height:100px; }
+        .list{list-style: none;}
+
+        .dib-baseline {
+            display: inline-block; width: 150px; height: 150px;
+            border: 1px solid #cad5eb; background-color: #f0f3f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"><img src="../images/swan-2077219_1920.jpg">I am kagol - xxxCSS图片文字样式</div>
+    <div>
+        <span class="dib-baseline"></span>
+        <span class="dib-baseline">x-baseline</span>
+    </div>
+</body>
+</html>
